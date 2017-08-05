@@ -1,2 +1,3 @@
 ﻿test Git
 I change the content
+I change the content too 
