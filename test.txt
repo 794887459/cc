@@ -4,3 +4,4 @@ I change the content too
 这是第三次修改了
 我进行了第四次修改
 五次修改
+我学到分支了 都学了git checkout 分支名 git branch
