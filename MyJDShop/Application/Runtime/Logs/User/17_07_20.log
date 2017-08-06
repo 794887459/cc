@@ -1,0 +1,750 @@
+[ 2017-07-20T00:10:18+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
+
+[ 2017-07-20T00:10:47+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/User/userinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0068s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `users` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined index: search E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\6b9436c94cad7c664832805243d0eb38.php 第 56 行.
+NOTIC: [8] Undefined variable: clickArr E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\6b9436c94cad7c664832805243d0eb38.php 第 103 行.
+NOTIC: [8] Undefined variable: cartNum E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\6b9436c94cad7c664832805243d0eb38.php 第 120 行.
+NOTIC: [8] Use of undefined constant mygz - assumed 'mygz' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\6b9436c94cad7c664832805243d0eb38.php 第 184 行.
+NOTIC: [8] Use of undefined constant history - assumed 'history' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\6b9436c94cad7c664832805243d0eb38.php 第 185 行.
+NOTIC: [8] Use of undefined constant userinfo - assumed 'userinfo' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\6b9436c94cad7c664832805243d0eb38.php 第 190 行.
+NOTIC: [8] Use of undefined constant balance - assumed 'balance' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\6b9436c94cad7c664832805243d0eb38.php 第 191 行.
+NOTIC: [8] Use of undefined constant record - assumed 'record' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\6b9436c94cad7c664832805243d0eb38.php 第 192 行.
+NOTIC: [8] Use of undefined constant integral - assumed 'integral' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\6b9436c94cad7c664832805243d0eb38.php 第 193 行.
+NOTIC: [8] Use of undefined constant addAddr - assumed 'addAddr' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\6b9436c94cad7c664832805243d0eb38.php 第 194 行.
+NOTIC: [8] Use of undefined constant repair - assumed 'repair' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\6b9436c94cad7c664832805243d0eb38.php 第 199 行.
+NOTIC: [8] Use of undefined constant complain - assumed 'complain' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\6b9436c94cad7c664832805243d0eb38.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001577s ]
+
+[ 2017-07-20T00:10:47+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/User/style/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0078s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+ERR: 非法操作:style
+
+[ 2017-07-20T00:10:47+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/User/style/global.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0067s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+ERR: 非法操作:style
+
+[ 2017-07-20T00:10:47+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/User/style/bottomnav.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0065s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+ERR: 非法操作:style
+
+[ 2017-07-20T00:10:49+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0066s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `orderinfo` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `orderdetails` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `orderinfo` WHERE ( userid=1 ) ORDER BY id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `orderdetails` WHERE ( orderid=29 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product` WHERE ( productid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `orderdetails` WHERE ( orderid=28 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product` WHERE ( productid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `orderdetails` WHERE ( orderid=27 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=7 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product` WHERE ( productid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `orderdetails` WHERE ( orderid=26 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product` WHERE ( productid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orderinfo` WHERE ( userid=1 and ispay=0 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined index: search E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 64 行.
+NOTIC: [8] Undefined variable: clickArr E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 111 行.
+NOTIC: [8] Undefined variable: cartNum E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 128 行.
+NOTIC: [8] Use of undefined constant mygz - assumed 'mygz' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 192 行.
+NOTIC: [8] Use of undefined constant history - assumed 'history' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant userinfo - assumed 'userinfo' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 198 行.
+NOTIC: [8] Use of undefined constant balance - assumed 'balance' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 199 行.
+NOTIC: [8] Use of undefined constant record - assumed 'record' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 200 行.
+NOTIC: [8] Use of undefined constant integral - assumed 'integral' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 201 行.
+NOTIC: [8] Use of undefined constant addAddr - assumed 'addAddr' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 202 行.
+NOTIC: [8] Use of undefined constant repair - assumed 'repair' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 207 行.
+NOTIC: [8] Use of undefined constant complain - assumed 'complain' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2017-07-20T00:10:50+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/style/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0061s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+ERR: 非法操作:style
+
+[ 2017-07-20T00:10:50+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/style/global.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0062s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+ERR: 非法操作:style
+
+[ 2017-07-20T00:10:50+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/style/bottomnav.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0063s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+ERR: 非法操作:style
+
+[ 2017-07-20T00:10:55+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/orderDetail/orderid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0091s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `orderinfo` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `orderdetails` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `orderinfo` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT d.*,p.productname,p.vipprice FROM orderdetails d INNER JOIN product as p on p.productid=d.productid  WHERE ( d.orderid=26 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `userinfo` WHERE ( userid=1 and state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] Undefined index: search E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 57 行.
+NOTIC: [8] Undefined variable: clickArr E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 104 行.
+NOTIC: [8] Undefined variable: cartNum E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 121 行.
+NOTIC: [8] Use of undefined constant mygz - assumed 'mygz' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 185 行.
+NOTIC: [8] Use of undefined constant history - assumed 'history' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 186 行.
+NOTIC: [8] Use of undefined constant userinfo - assumed 'userinfo' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 191 行.
+NOTIC: [8] Use of undefined constant balance - assumed 'balance' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 192 行.
+NOTIC: [8] Use of undefined constant record - assumed 'record' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 193 行.
+NOTIC: [8] Use of undefined constant integral - assumed 'integral' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 194 行.
+NOTIC: [8] Use of undefined constant addAddr - assumed 'addAddr' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 195 行.
+NOTIC: [8] Use of undefined constant repair - assumed 'repair' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 200 行.
+NOTIC: [8] Use of undefined constant complain - assumed 'complain' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2017-07-20T00:10:55+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/orderDetail/orderid/style/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0066s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `orderinfo` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `orderdetails` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0059s ]
+ERR: 1054:Unknown column 'style' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `orderinfo` WHERE ( id=style ) LIMIT 1  
+ERR: 1054:Unknown column 'style' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `orderinfo` WHERE ( id=style ) LIMIT 1  
+
+[ 2017-07-20T00:10:55+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/orderDetail/orderid/style/global.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0061s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `orderinfo` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `orderdetails` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0058s ]
+ERR: 1054:Unknown column 'style' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `orderinfo` WHERE ( id=style ) LIMIT 1  
+ERR: 1054:Unknown column 'style' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `orderinfo` WHERE ( id=style ) LIMIT 1  
+
+[ 2017-07-20T00:10:55+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/orderDetail/orderid/style/bottomnav.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0063s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `orderinfo` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `orderdetails` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0063s ]
+ERR: 1054:Unknown column 'style' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `orderinfo` WHERE ( id=style ) LIMIT 1  
+ERR: 1054:Unknown column 'style' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `orderinfo` WHERE ( id=style ) LIMIT 1  
+
+[ 2017-07-20T00:11:07+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0063s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `orderinfo` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `orderdetails` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `orderinfo` WHERE ( userid=1 ) ORDER BY id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `orderdetails` WHERE ( orderid=29 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product` WHERE ( productid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `orderdetails` WHERE ( orderid=28 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product` WHERE ( productid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `orderdetails` WHERE ( orderid=27 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product` WHERE ( productid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `orderdetails` WHERE ( orderid=26 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product` WHERE ( productid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orderinfo` WHERE ( userid=1 and ispay=0 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: search E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 64 行.
+NOTIC: [8] Undefined variable: clickArr E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 111 行.
+NOTIC: [8] Undefined variable: cartNum E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 128 行.
+NOTIC: [8] Use of undefined constant mygz - assumed 'mygz' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 192 行.
+NOTIC: [8] Use of undefined constant history - assumed 'history' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 193 行.
+NOTIC: [8] Use of undefined constant userinfo - assumed 'userinfo' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 198 行.
+NOTIC: [8] Use of undefined constant balance - assumed 'balance' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 199 行.
+NOTIC: [8] Use of undefined constant record - assumed 'record' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 200 行.
+NOTIC: [8] Use of undefined constant integral - assumed 'integral' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 201 行.
+NOTIC: [8] Use of undefined constant addAddr - assumed 'addAddr' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 202 行.
+NOTIC: [8] Use of undefined constant repair - assumed 'repair' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 207 行.
+NOTIC: [8] Use of undefined constant complain - assumed 'complain' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9efe4e2e7d8b5d087d2c6ca784b0e3f7.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2017-07-20T00:11:07+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/style/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0071s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+ERR: 非法操作:style
+
+[ 2017-07-20T00:11:07+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/style/global.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0064s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+ERR: 非法操作:style
+
+[ 2017-07-20T00:11:07+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/style/bottomnav.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+ERR: 非法操作:style
+
+[ 2017-07-20T00:11:12+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/orderDetail/orderid/27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0085s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `orderinfo` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `orderdetails` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `orderinfo` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT d.*,p.productname,p.vipprice FROM orderdetails d INNER JOIN product as p on p.productid=d.productid  WHERE ( d.orderid=27 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `userinfo` WHERE ( userid=1 and state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: search E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 57 行.
+NOTIC: [8] Undefined variable: clickArr E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 104 行.
+NOTIC: [8] Undefined variable: cartNum E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 121 行.
+NOTIC: [8] Use of undefined constant mygz - assumed 'mygz' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 185 行.
+NOTIC: [8] Use of undefined constant history - assumed 'history' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 186 行.
+NOTIC: [8] Use of undefined constant userinfo - assumed 'userinfo' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 191 行.
+NOTIC: [8] Use of undefined constant balance - assumed 'balance' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 192 行.
+NOTIC: [8] Use of undefined constant record - assumed 'record' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 193 行.
+NOTIC: [8] Use of undefined constant integral - assumed 'integral' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 194 行.
+NOTIC: [8] Use of undefined constant addAddr - assumed 'addAddr' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 195 行.
+NOTIC: [8] Use of undefined constant repair - assumed 'repair' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 200 行.
+NOTIC: [8] Use of undefined constant complain - assumed 'complain' E:\PHP\www\MyJDShop\Application\Runtime\Cache\User\9ddb5f8ddbfca15ce494efa1fe52d01f.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2017-07-20T00:11:12+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/orderDetail/orderid/style/global.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0064s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `orderinfo` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `orderdetails` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0064s ]
+ERR: 1054:Unknown column 'style' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `orderinfo` WHERE ( id=style ) LIMIT 1  
+ERR: 1054:Unknown column 'style' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `orderinfo` WHERE ( id=style ) LIMIT 1  
+
+[ 2017-07-20T00:11:12+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/orderDetail/orderid/style/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0065s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `orderinfo` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `orderdetails` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0062s ]
+ERR: 1054:Unknown column 'style' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `orderinfo` WHERE ( id=style ) LIMIT 1  
+ERR: 1054:Unknown column 'style' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `orderinfo` WHERE ( id=style ) LIMIT 1  
+
+[ 2017-07-20T00:11:12+08:00 ] 127.0.0.1 /MyJDShop/index.php/User/Order/orderDetail/orderid/style/bottomnav.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 19 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 21 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\User\Controller\MainController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0066s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `orderinfo` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `orderdetails` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0063s ]
+ERR: 1054:Unknown column 'style' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `orderinfo` WHERE ( id=style ) LIMIT 1  
+ERR: 1054:Unknown column 'style' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `orderinfo` WHERE ( id=style ) LIMIT 1  
+

@@ -1,0 +1,86 @@
+.ftx-01, .ftx01 {
+    color: #e4393c;
+	font: 700 24px/100px "Microsoft YaHei";
+	margin-left:20px;
+	}
+.ul1 {
+    width: 189px;
+    margin-left: 150px;
+	position: absolute;
+    margin-top: -100px;
+    text-align: center;
+	color:#333;
+    font-size: 14px;
+    line-height: 20px;
+}
+.ul2 {
+    width: 189px;
+    margin-left: 300px;
+	position: absolute;
+    margin-top: -100px;
+    text-align: center;
+	font-size: 14px;
+    line-height: 20px;
+	color:#999;
+}
+.ul3 {
+    width: 189px;
+    margin-left: 450px;
+	position: absolute;
+    margin-top: -100px;
+    text-align: center;
+	font-size: 14px;
+    line-height: 20px;
+	color:#999;
+}	
+.ul4 {
+    width: 189px;
+    margin-left: 600px;
+	position: absolute;
+    margin-top: -100px;
+    text-align: center;
+	font-size: 14px;
+    line-height: 20px;
+	color:#999;
+}
+.ul5 {
+    width: 189px;
+    margin-left: 750px;
+	position: absolute;
+    margin-top: -100px;
+    text-align: center;
+	font-size: 14px;
+    line-height: 20px;
+	color:#999;
+}
+.dl {
+    float: left;
+    height: 300px;
+	margin-top:100px;
+	margin-left:9px;
+    border: 1px solid #f1f1f1;
+    border-width: 1px 0 0 1px;
+}
+.dt h4 {
+    line-height: 24px;
+    font-size: 14px;
+}
+.dd {
+    color: #333;
+    line-height: 20px;
+}
+.item {
+    line-height: 24px;
+    display: inline-block;
+    display: block;
+}
+.label {
+    float: left;
+    width: 80px;
+}
+.info-rcol {
+    float: left;
+    width: 240px;
+    max-height: 72px;
+    overflow: hidden;
+}

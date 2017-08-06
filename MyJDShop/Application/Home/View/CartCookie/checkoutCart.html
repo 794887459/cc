@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>填写核对订单信息</title>
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/base.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/global.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/header.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/fillin.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/footer.css" type="text/css">
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/cart2.js"></script>
+	<script>
+		$(function(){
+			$('[name="city"]').change(function(){
+				var cid = $(this).val();
+				$.ajax({
+					url:'__APP__/User/User/ajax',
+					type:'get',
+					data:{'cid':cid},
+					success:function(re){
+						$('[name="region"] option:gt(0)').remove();//除了第一个
+						//$("div span:gt(0)").remove();
+						$('[name="region"]').append(re);
+						//alert(re);
+					}
+				}) 
+			})
+			$('[name="region"]').change(function(){
+				var cid = $(this).val();
+				$.ajax({
+					url:'__APP__/User/User/ajax',
+					type:'get',
+					data:{'cid':cid},
+					success:function(re){
+						$('[name="county"] option:gt(0)').remove();//除了第一个
+						//$("div span:gt(0)").remove();
+						$('[name="county"]').append(re);
+						//alert(re);
+					}
+				}) 
+			})
+		})
+	</script>
+	<style>
+	#savesub{
+		height:30px;background:#E43E41;color:#FFFFFF;border:0px;width:150px;font-size:14px;cursor: pointer;
+	}
+	#sub{
+		background:red;
+		border:none;
+		color:#fff;
+		height: 30px;
+		margin-top: 10px;
+		width:144px;
+		cursor: pointer;
+		font-size: 14px;
+		font-weight: bolder;
+	}
+	#sub:hover{
+		background-position: 0 -60px;
+	}
+	</style>
+</head>
+<body>
+	<!-- 顶部导航 start -->
+	<include file="Public/top"/>
+	<!-- 顶部导航 end -->
+	
+	<div style="clear:both;"></div>
+	
+	<!-- 页面头部 start -->
+	<div class="header w990 bc mt15">
+		<div class="logo w990">
+			<h2 class="fl"><a href="__APP__/Home/Index/index"><img src="__PUBLIC__/Home/images/logo.png" alt="京西商城"></a></h2>
+			<div class="flow fr flow2">
+				<ul>
+					<li>1.我的购物车</li>
+					<li class="cur">2.填写核对订单信息</li>
+					<li>3.成功提交订单</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 页面头部 end -->
+	
+	<div style="clear:both;"></div>
+
+	<!-- 主体部分 start -->
+	<div class="fillin w990 bc mt15">
+		<div class="fillin_hd">
+			<h2>填写并核对订单信息</h2>
+		</div>
+
+		<div class="fillin_bd">
+			<!-- 收货人信息  start-->
+			<div class="address">
+				<h3>收货人信息 <a href="javascript:;" id="address_modify">[修改]</a></h3>
+				
+				<div class="address_info">
+					<p>{$defArr.name}  {$defArr.phone} </p>
+					<p>{$defArr.addr} </p>
+				</div>
+
+				<div class="address_select none">
+					<ul>
+					<foreach name="infoArr" item="v">
+						<li class="cur">
+							<input type="radio" name="address" <if condition="$v['state'] eq 1">checked="checked"</if> />{$v.name}&nbsp;&nbsp;{$v.addr} {$v.phone} 
+							<a href="__APP__/User/User/setDefaddr/id/{$v.id}">设为默认地址</a>
+							<a href="__APP__/User/User/addAddr/id/{$v.id}/s/2">编辑</a>
+							<a href="__APP__/User/User/deleteAddr/id/{$v.id}/s/2">删除</a>
+						</li>
+					</foreach>
+						<li><input type="radio" name="address" class="new_address"  />使用新地址</li>
+					</ul>	
+					<form action="__APP__/User/User/addAddr/s/2" class="none" name="address_form" method="post">
+						<ul>
+							<li>
+								<label for=""><span>*</span>收 货 人：</label>
+								<input type="text" name="name" class="txt" />
+							</li>
+							<li>
+								<label for=""><span></span>所在地区：</label>
+								<select name="city" id="">
+									<option value="">请选择</option>
+									{$cityStr}
+								</select>
+
+								<select name="region" id="">
+									<option value="">请选择</option>
+								</select>
+
+								<select name="county" id="">
+									<option value="">请选择</option>
+								</select>
+							</li>
+							<li>
+								<label for=""><span>*</span>详细地址：</label>
+								<input type="text" name="addr" class="txt address"  />
+							</li>
+							<li>
+								<label for=""><span>*</span>手机号码：</label>
+								<input type="text" name="phone" class="txt" />
+							</li>
+						</ul>
+						<input type="submit" value="保存收货人信息" id="savesub"/>
+					</form>
+				</div>
+			</div>
+			<!-- 收货人信息  end-->
+					
+			<!-- 配送方式 start -->
+			<div class="delivery">
+				<h3>送货方式 <a href="javascript:;" id="delivery_modify">[修改]</a></h3>
+				<div class="delivery_info">
+					<p><if condition="!$defArr['smode']">普通快递</if>{$defArr.smode}</p>
+					<p><if condition="!$defArr['stime']">时间不限</if>{$defArr.stime}</p>
+				</div>
+
+				<div class="delivery_select none">
+					<form  action="__APP__/User/User/updateAddr/s/2" method="post" id="s_from">
+						<table>
+							<thead>
+								<tr>
+									<th class="col1">送货方式</th>
+									<th class="col2">运费</th>
+									<th class="col3">运费标准</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="cur">	
+									<td>
+										<input type="radio" name="smode" value="普通快递送货上门" checked="checked"/>普通快递送货上门
+										<select name="stime" id="">
+											<option value="时间不限">时间不限</option>
+											<option value="工作日，周一到周五">工作日，周一到周五</option>
+											<option value="周六日及公众假期">周六日及公众假期</option>
+										</select>
+									</td>
+									<td>0</td>
+									<td>包邮</td>
+								</tr>
+								<tr>
+									<td><input type="radio" name="smode" value="顺丰专递" />顺丰专递</td>
+									<td>￥25.00</td>
+									<td>顺丰快递需补运费差价</td>
+								</tr>
+							</tbody>
+						</table>
+						<input type="submit" id="sub" value="确认送货方式" />
+					</form>
+				</div>
+			</div> 
+			
+			<!-- 配送方式 end --> 
+
+			<!-- 支付方式  start-->
+			<div class="pay">
+				<h3>支付方式 <a href="javascript:;" id="pay_modify">[修改]</a></h3>
+				<div class="pay_info">
+					<p>{$defArr.pay}</p>
+				</div>
+
+				<div class="pay_select none">
+					<form  action="__APP__/User/User/updateAddr/s/2" method="post">
+						<table> 
+							<tr>
+								<td class="col1"><input type="radio" name="pay" value="在线支付" checked="checked"/>在线支付</td>
+								<td class="col2">即时到帐，支持绝大数银行借记卡及部分银行信用卡</td>
+							</tr>
+							<tr class="cur">
+								<td class="col1"><input type="radio" name="pay" value="货到付款"/>货到付款</td>
+								<td class="col2">送货上门后再收款，支持现金、POS机刷卡、支票支付</td>
+							</tr>
+						</table>
+						<input type="submit" id="sub" value="确认支付方式" />
+					</form>
+				</div>
+			</div>
+			<!-- 支付方式  end-->
+
+			<!-- 发票信息 start-->
+			<div class="receipt">
+				<h3>发票信息 <a href="javascript:;" id="receipt_modify">[修改]</a></h3>
+				<div class="receipt_info">
+					<p>{$defArr.fhead}</p>
+					<p>内容：{$defArr.fcontent}</p>
+				</div>
+
+				<div class="receipt_select none">
+					<form  action="__APP__/User/User/updateAddr/s/2" method="post">
+						<ul>
+							<li>
+								<label for="">发票抬头：</label>
+								<input type="radio" name="fhead" checked="checked" class="personal" value="个人"/>个人
+								<input type="radio" name="fhead" class="company" value="单位"/>单位
+								<input type="text"  name="fhead" class="txt company_input" disabled="disabled" value="{$defArr.fhead}"/>
+							</li>
+							<li>
+								<label for="">发票内容：</label>
+								<input type="radio" name="fcontent" checked="checked" value="明细"/>明细
+								<input type="radio" name="fcontent" value="办公用品"/>办公用品
+								<input type="radio" name="fcontent" value="体育休闲"/>体育休闲
+								<input type="radio" name="fcontent" value="耗材"/>耗材
+							</li>
+						</ul>
+						<input type="submit" id="sub" value="确认支付方式" />						
+					</form>
+				</div>
+			</div>
+			<!-- 发票信息 end-->
+
+			<!-- 商品清单 start -->
+			<div class="goods">
+				<h3>商品清单</h3>
+				<table>
+					<thead>
+						<tr>
+							<th class="col1">商品</th>
+							<th class="col2">规格</th>
+							<th class="col3">价格</th>
+							<th class="col4">数量</th>
+							<th class="col5">小计</th>
+						</tr>	
+					</thead>
+					<tbody>
+					<foreach name="cartArr" item="v">
+						<tr>
+							<td class="col1"><a href=""><img src="__PUBLIC__/Upload/Product/{$v.imagename}" alt="" /></a>  <strong><a href="">{$v.productname}</a></strong></td>
+							<td class="col2"> <p>{$v.style}</p> <p></p> </td>
+							<td class="col3">￥{$v.vipprice}</td>
+							<td class="col4"> {$v.num}</td>
+							<td class="col5"><span id="xiaoji">￥{$v.xiaoji}.00</span></td>
+						</tr>
+					</foreach>	
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="5">
+								<ul>
+									<li><!-- $被调节变量|函数名=参数1,参数2,###..... -->
+										<span>{$cartArr|count=###} 件商品，总商品金额：￥{$cartArr[0]['sum']}.00</span>
+										<em></em>
+									</li>
+									
+									<li>
+										<span>应付总额：￥{$cartArr[0]['sum']}.00</span>
+										<em></em>
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<!-- 商品清单 end -->
+		
+		</div>
+
+		<div class="fillin_ft">
+			<a href="__APP__/User/Order/order"><span>提交订单</span></a>
+			<p>应付总额：<strong>￥{$cartArr[0]['sum']}.00元</strong></p>
+		</div>
+	</div>
+	<!-- 主体部分 end -->
+
+	<div style="clear:both;"></div>
+	<!-- 底部版权 start -->
+	<include file="Public/userFooter"/>
+	<!-- 底部版权 end -->
+</body>
+</html>

@@ -1,0 +1,18 @@
+[ 2017-07-15T16:52:22+08:00 ] 127.0.0.1 /MyJDShop/index.php/head.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+ERR: 无法加载模块:Head
+
+[ 2017-07-15T16:52:22+08:00 ] 127.0.0.1 /MyJDShop/index.php/right.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+ERR: 无法加载模块:Right
+
+[ 2017-07-15T16:52:22+08:00 ] 127.0.0.1 /MyJDShop/index.php/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+ERR: 无法加载模块:Left
+

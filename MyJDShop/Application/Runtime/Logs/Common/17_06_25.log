@@ -1,0 +1,30 @@
+[ 2017-06-25T12:44:17+08:00 ] 127.0.0.1 /MyJDShop/index.php/js/header.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+ERR: 无法加载模块:Js
+
+[ 2017-06-25T12:44:17+08:00 ] 127.0.0.1 /MyJDShop/index.php/js/jquery-1.8.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+ERR: 无法加载模块:Js
+
+[ 2017-06-25T12:44:17+08:00 ] 127.0.0.1 /MyJDShop/index.php/js/index.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+ERR: 无法加载模块:Js
+
+[ 2017-06-25T12:44:17+08:00 ] 127.0.0.1 /MyJDShop/index.php/js/header.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载模块:Js
+
+[ 2017-06-25T12:44:17+08:00 ] 127.0.0.1 /MyJDShop/index.php/js/index.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+ERR: 无法加载模块:Js
+

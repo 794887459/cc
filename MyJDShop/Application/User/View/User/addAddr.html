@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>收货地址</title>
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/base.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/global.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/header.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/home.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/address.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/bottomnav.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/footer.css" type="text/css">
+
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/header.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/home.js"></script>
+	<script>
+		$(function(){
+			$('[name="city"]').change(function(){
+				var cid = $(this).val();
+				$.ajax({
+					url:'__URL__/ajax',
+					type:'get',
+					data:{'cid':cid},
+					success:function(re){
+						$('[name="region"] option:gt(0)').remove();//除了第一个
+						//$("div span:gt(0)").remove();
+						$('[name="region"]').append(re);
+						//alert(re);
+					}
+				}) 
+			})
+			$('[name="region"]').change(function(){
+				var cid = $(this).val();
+				$.ajax({
+					url:'__URL__/ajax',
+					type:'get',
+					data:{'cid':cid},
+					success:function(re){
+						$('[name="county"] option:gt(0)').remove();//除了第一个
+						//$("div span:gt(0)").remove();
+						$('[name="county"]').append(re);
+						//alert(re);
+					}
+				}) 
+			})
+		})
+	</script>
+</head>
+<body>
+	<!-- 顶部导航 start -->
+	<include file="Public/header"/>
+	<!-- 头部 end-->
+	
+	<div style="clear:both;"></div>
+
+	<!-- 页面主体 start -->
+	<div class="main w1210 bc mt10">
+		
+		<!-- 左侧导航菜单 start -->
+		<include file="Public/orderMenu"/>
+		<!-- 左侧导航菜单 end -->
+
+		<!-- 右侧内容区域 start -->
+		<div class="content fl ml10">
+			<div class="address_hd">
+				<h3>收货地址薄</h3>
+				<foreach name="infoArr" item="v">
+					<dl>
+						<dt>{$v.addr} {$v.phone} </dt>
+						<dd>
+							<a href="__URL__/addAddr/id/{$v.id}">修改</a>
+							<a href="__URL__/deleteAddr/id/{$v.id}">删除</a>
+							<a href="__URL__/setDefaddr/id/{$v.id}">设为默认地址</a>
+						</dd>
+					</dl>
+				</foreach>
+			</div>
+
+			<div class="address_bd mt10">
+				<h4>新增/修改收货地址</h4>
+				<form action="" name="address_form" method="post">
+						<ul>
+							<li>
+								<label for=""><span>*</span>收 货 人：</label>
+								<input type="text" name="name" class="txt" value="{$thisArr.name}"/>
+							</li>
+							<li>
+								<label for=""><span></span>所在地区：</label>
+								<select name="city" id="">
+									<option value="" selected>请选择省份</option>
+									{$cityStr}
+								</select>
+
+								<select name="region" id="">
+									<option value="" selected>请选择</option>
+								</select>
+
+								<select name="county" id="">
+									<option value="" selected>请选择</option>
+								</select>
+							</li>
+							<li>
+								<label for=""><span>*</span>详细地址：</label>
+								<input type="text" name="addr" class="txt address"  value="{$thisArr.addr}"/>
+							</li>
+							<li>
+								<label for=""><span>*</span>手机号码：</label>
+								<input type="text" name="phone" class="txt" value="{$thisArr.phone}"/>
+							</li>
+							<li>
+								<label for="">&nbsp;</label>
+								<input type="checkbox" name="state" class="check" value=1 />设为默认地址
+							</li>
+							<li>
+								<label for="">&nbsp;</label>
+								<input type="submit" name="" class="btn" value="保存" />
+							</li>
+						</ul>
+					</form>
+			</div>	
+
+		</div>
+		<!-- 右侧内容区域 end -->
+	</div>
+	<!-- 页面主体 end-->
+
+	<div style="clear:both;"></div>
+
+	<!-- 底部导航 start -->
+	<include file="Public/bottomnav"/>
+	<!-- 底部导航 end -->
+
+	<div style="clear:both;"></div>
+	<!-- 底部版权 start -->
+	<div class="footer w1210 bc mt10">
+		<p class="links">
+			<a href="">关于我们</a> |
+			<a href="">联系我们</a> |
+			<a href="">人才招聘</a> |
+			<a href="">商家入驻</a> |
+			<a href="">千寻网</a> |
+			<a href="">奢侈品网</a> |
+			<a href="">广告服务</a> |
+			<a href="">移动终端</a> |
+			<a href="">友情链接</a> |
+			<a href="">销售联盟</a> |
+			<a href="">京西论坛</a>
+		</p>
+		<p class="copyright">
+			 © 2005-2013 京东网上商城 版权所有，并保留所有权利。  ICP备案证书号:京ICP证070359号 
+		</p>
+		<p class="auth">
+			<a href=""><img src="__PUBLIC__/Home/images/xin.png" alt="" /></a>
+			<a href=""><img src="__PUBLIC__/Home/images/kexin.jpg" alt="" /></a>
+			<a href=""><img src="__PUBLIC__/Home/images/police.jpg" alt="" /></a>
+			<a href=""><img src="__PUBLIC__/Home/images/beian.gif" alt="" /></a>
+		</p>
+	</div>
+	<!-- 底部版权 end -->
+</body>
+</html>

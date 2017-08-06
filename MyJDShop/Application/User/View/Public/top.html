@@ -1,0 +1,21 @@
+<div class="topnav">
+		<div class="topnav_bd w990 bc">
+			<div class="topnav_left">
+				
+			</div>
+			<div class="topnav_right fr">
+				<ul>
+					<if condition="!isset($_COOKIE['userid'])">
+						<li>您好，欢迎来到京东！[<a href="__APP__/Home/User/login">登录</a>] [<a href="__APP__/Home/User/register">免费注册</a>] </li>
+						<else/><li>您好，欢迎来到京东！  <a href="">{$_COOKIE['nickname']}</a></li>
+						<li class="line">|</li>
+						<li><a onclick="if (confirm('确定要退出吗？')) return true; else return false;" href="__APP__/Home/User/logout">退出</a></li>
+						<li class="line">|</li>
+						<li><a href="__APP__/User/Order/index">我的订单</a></li>
+						<li class="line">|</li>
+						<li>客户服务</li>
+					</if>
+				</ul>
+			</div>
+		</div>
+</div>

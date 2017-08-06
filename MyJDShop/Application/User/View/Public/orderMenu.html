@@ -1,0 +1,25 @@
+<div class="menu fl">
+			<div class="menu_wrap">
+				<dl>
+					<dt>订单中心 <b></b></dt>
+					<dd <if condition="$controller.'/'.$method eq 'Order/index'">class="cur"</if>><b>.</b><a href="__APP__/User/Order/index">我的订单</a></dd>
+					<dd <if condition="$method eq mygz">class="cur"</if>><b>.</b><a href="">我的关注</a></dd>
+					<dd <if condition="$method eq history">class="cur"</if>><b>.</b><a href="__APP__/User/History/historyList">浏览历史</a></dd>
+				</dl>
+
+				<dl>
+					<dt>账户中心 <b></b></dt>
+					<dd <if condition="$method eq userinfo">class="cur"</if>><b>.</b><a href="__APP__/User/User/userinfo">账户信息</a></dd>
+					<dd <if condition="$method eq balance">class="cur"</if>><b>.</b><a href="">账户余额</a></dd>
+					<dd <if condition="$method eq record">class="cur"</if>><b>.</b><a href="">消费记录</a></dd>
+					<dd <if condition="$method eq integral">class="cur"</if>><b>.</b><a href="">我的积分</a></dd>
+					<dd <if condition="$method eq addAddr">class="cur"</if>><b>.</b><a href="__APP__/User/User/addAddr">收货地址</a></dd>
+				</dl>
+
+				<dl>
+					<dt>订单中心 <b></b></dt>
+					<dd <if condition="$method eq repair">class="cur"</if>><b>.</b><a href="">返修/退换货</a></dd>
+					<dd <if condition="$method eq complain">class="cur"</if>><b>.</b><a href="">我的投诉</a></dd>
+				</dl>
+			</div>
+		</div>

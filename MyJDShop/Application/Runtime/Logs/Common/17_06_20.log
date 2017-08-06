@@ -1,0 +1,12 @@
+[ 2017-06-20T15:10:25+08:00 ] ::1 /MyJDShop/index.php/MyJDShop/index.php/Admin/GoodsTypes/searchType/search_name/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:MyJDShop
+
+[ 2017-06-20T15:10:58+08:00 ] ::1 /MyJDShop/index.php/MyJDShop/index.php/Admin/GoodsTypes/searchType/search_name/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:MyJDShop
+

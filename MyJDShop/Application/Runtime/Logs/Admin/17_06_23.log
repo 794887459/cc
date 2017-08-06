@@ -1,0 +1,1505 @@
+[ 2017-06-23T08:53:25+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/listProduct?search_typestr=%3E1%3E&search_brandid=33&search_name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SELECT p.*,b.brandname FROM product p INNER JOIN brand as b on b.brandid=p.brandid  WHERE ( p.typestr like '%&gt;1&gt;%' and p.brandid=33 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:29:39+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 60 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 60 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 80 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 80 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 84 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 84 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 88 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 88 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 92 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 92 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 96 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 96 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 104 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 110 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:36:43+08:00 ] ::1 /MyJDShop/index.php/Admin/Brand/addBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Model\GoodsTypesModel.class.php 第 32 行.
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\e41d760ac9abb9ff4d34c787c568def1.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:37:54+08:00 ] ::1 /MyJDShop/index.php/Admin/Brand/addBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\MyJDShop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: validate C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `brand` WHERE `brandname` = '三星' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `brand` (`brandname`,`typeid`,`imagename`) VALUES ('三星','1','594cd36269b68.png') [ RunTime:0.1830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:37:55+08:00 ] ::1 /MyJDShop/index.php/Admin/Brand/addBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Model\GoodsTypesModel.class.php 第 32 行.
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\e41d760ac9abb9ff4d34c787c568def1.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:38:12+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/ajax?typeid=%3E1%3E2%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `brand` WHERE ( typeid=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:38:27+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/ajax?typeid=%3E1%3E2%3E3%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand` WHERE ( typeid=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:42:48+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 60 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 60 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 80 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 80 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 84 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 84 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 88 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 88 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 92 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 92 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 96 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 96 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 104 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 110 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:43:08+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/ajax?typeid=%3E1%3E2%3E3%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `brand` WHERE ( typeid=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:44:16+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `product` (`productname`,`typestr`,`brandid`,`price`,`vipprice`,`yhprice`,`yhnum`,`libnum`,`content`,`style`) VALUES ('三星UA55KUC30SJXXZ','&gt;1&gt;2&gt;3&gt;','34','5499.00','5499.00','5499.00','0','12','商品名称：三星UA55KUC30SJXXZ商品编号：2958933商品毛重：25.0kg商品产地：中国大陆观看距离：3-3.5米分辨率：超高清电视类型：曲面电视，4K超清电视，HDR，智能电视能效等级：三级能效屏幕尺寸：55英寸','产品品牌&lt;br /&gt;
+三星（SAMSUNG）&lt;br /&gt;
+产品型号&lt;br /&gt;
+UA55KUC30SJXXZ&lt;br /&gt;
+产品颜色&lt;br /&gt;
+黑色&lt;br /&gt;
+产品类型&lt;br /&gt;
+4K超清电视&lt;br /&gt;
+最佳观看距离(米)&lt;br /&gt;
+3m-3.5m&lt;br /&gt;
+上市日期&lt;br /&gt;
+2016.7&lt;br /&gt;
+能效等级&lt;br /&gt;
+三级能效&lt;br /&gt;') [ RunTime:0.1230s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\MyJDShop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\MyJDShop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `productimage` (`productid`,`imagename`) VALUES ('4','594cd4e043a08.jpg') [ RunTime:0.0610s ]
+SQL: INSERT INTO `productimage` (`productid`,`imagename`) VALUES ('4','594cd4e046cd0.jpg') [ RunTime:0.0660s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:44:17+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/listProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: search_typestr C:\www\MyJDShop\Application\Admin\Controller\ProductController.class.php 第 56 行.
+NOTIC: [8] Undefined index: search_brandid C:\www\MyJDShop\Application\Admin\Controller\ProductController.class.php 第 57 行.
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Controller\ProductController.class.php 第 58 行.
+SQL: SELECT p.*,b.brandname FROM product p INNER JOIN brand as b on b.brandid=p.brandid  WHERE ( p.typestr like '%%' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:44:47+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 60 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 60 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 80 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 80 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 84 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 84 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 88 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 88 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 92 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 92 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 96 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 96 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 104 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 110 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:48:42+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 60 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 60 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 90 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 90 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 94 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 94 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 98 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 98 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 102 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 102 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 106 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 106 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 114 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 115 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 120 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:49:12+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 60 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 60 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 91 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 91 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 95 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 95 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 99 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 99 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 103 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 103 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 107 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 107 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 115 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 116 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 121 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:51:52+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 62 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 62 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 93 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 93 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 97 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 97 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 101 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 101 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 109 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 109 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 117 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 118 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 123 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:51:54+08:00 ] ::1 /MyJDShop/index.php/Admin/GoodsTypes/addType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:addType
+
+[ 2017-06-23T16:51:58+08:00 ] ::1 /MyJDShop/index.php/Admin/GoodsTypes/addType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:addType
+
+[ 2017-06-23T16:52:00+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 62 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 62 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 93 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 93 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 97 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 97 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 101 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 101 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 109 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 109 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 117 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 118 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 123 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:52:01+08:00 ] ::1 /MyJDShop/index.php/Admin/GoodsTypes/addTypes
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\a294c09bbcf5a7d80542db95fb1196ac.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:52:06+08:00 ] ::1 /MyJDShop/index.php/Admin/Brand/addBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Model\GoodsTypesModel.class.php 第 32 行.
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\e41d760ac9abb9ff4d34c787c568def1.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:52:30+08:00 ] ::1 /MyJDShop/index.php/Admin/Brand/addBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Model\GoodsTypesModel.class.php 第 32 行.
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\e41d760ac9abb9ff4d34c787c568def1.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:53:49+08:00 ] ::1 /MyJDShop/index.php/Admin/Brand/addBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\MyJDShop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: validate C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `brand` WHERE `brandname` = '小米' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `brand` (`brandname`,`typeid`,`imagename`) VALUES ('小米','1','594cd71cd61c8.png') [ RunTime:0.1330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:53:50+08:00 ] ::1 /MyJDShop/index.php/Admin/Brand/addBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Model\GoodsTypesModel.class.php 第 32 行.
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\e41d760ac9abb9ff4d34c787c568def1.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:53:54+08:00 ] ::1 /MyJDShop/index.php/Admin/Brand/listBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: search_type C:\www\MyJDShop\Application\Admin\Controller\BrandController.class.php 第 46 行.
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Controller\BrandController.class.php 第 47 行.
+SQL: SELECT b.*,t.typename FROM brand b INNER JOIN goodstypes as t on t.typeid=b.typeid  WHERE ( brandname like '%%' ) ORDER BY typeid desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Model\GoodsTypesModel.class.php 第 32 行.
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:54:01+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 62 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 62 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 93 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 93 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 97 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 97 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 101 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 101 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 109 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 109 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 117 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 118 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 123 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-23T16:55:35+08:00 ] ::1 /MyJDShop/index.php/Admin/GoodsTypes/addTypes
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\a294c09bbcf5a7d80542db95fb1196ac.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:55:51+08:00 ] ::1 /MyJDShop/index.php/Admin/GoodsTypes/addTypes
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `goodstypes` (`typename`,`fid`) VALUES ('4K超清','2') [ RunTime:0.0980s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:55:52+08:00 ] ::1 /MyJDShop/index.php/Admin/GoodsTypes/addTypes.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=29 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\a294c09bbcf5a7d80542db95fb1196ac.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:55:55+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0660s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=29 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 62 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 62 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 93 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 93 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 97 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 97 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 101 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 101 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 109 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 109 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 117 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 118 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 123 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:56:06+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/ajax?typeid=%3E1%3E2%3E29%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `brand` WHERE ( typeid=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:58:08+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `product` (`productname`,`typestr`,`brandid`,`state`,`price`,`vipprice`,`yhprice`,`yhnum`,`libnum`,`content`,`style`) VALUES ('小米小米电视4A 55英寸','&gt;1&gt;2&gt;29&gt;','35','1','3199.00','3199.00','3199.00','0','85','多轮递进 *识别明星脸 播放控制 天气查询 影视百科 &quot;我英语不好，给我推荐&lt;br /&gt;
+几部美国电影吧&quot; &quot;给我推荐一些影片，我不想看&lt;br /&gt;
+国外的，不想看恐怖片，更不要&lt;br /&gt;
+付费的，要火的&quot; &quot;我想看胡歌的电视剧&quot;&lt;br /&gt;
+&quot;不要古装的&quot;&lt;br /&gt;
+&quot;跟靳东、王凯一起演的&quot; &quot;我想看小李子获得&lt;br /&gt;
+奥斯卡的电影&quot; &quot;快进到第 54 分 21 秒&quot; &quot;邓超的老婆是谁&quot; &quot;北京今天天气怎么样&quot; 小米（MI）小米电视4A 标准版 55英寸 HDR 2GB+8GB 四核64位高性能处理器 4K超高清智能语音网络液晶平板电视（L55M5-AZ）-京东 （注：可支持语音搜索）&lt;br /&gt;
+小米（MI）小米电视4A 标准版 55英寸 HDR 2GB+8GB 四核64位高性能处理器 4K超高清智能语音网络液晶平板电视（L55M5-AZ）-京东 计时关机 &quot;10分钟后关机&quot;&lt;br /&gt;','产品品牌小米（MI）产品颜色亚光黑上市日期2017.3能效等级三级能效') [ RunTime:0.1740s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\MyJDShop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\MyJDShop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `productimage` (`productid`,`imagename`) VALUES ('5','594cd820a1dd8.jpg') [ RunTime:0.1870s ]
+SQL: INSERT INTO `productimage` (`productid`,`imagename`) VALUES ('5','594cd820a3930.jpg') [ RunTime:0.0800s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:58:10+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/listProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: search_typestr C:\www\MyJDShop\Application\Admin\Controller\ProductController.class.php 第 56 行.
+NOTIC: [8] Undefined index: search_brandid C:\www\MyJDShop\Application\Admin\Controller\ProductController.class.php 第 57 行.
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Controller\ProductController.class.php 第 58 行.
+SQL: SELECT p.*,b.brandname FROM product p INNER JOIN brand as b on b.brandid=p.brandid  WHERE ( p.typestr like '%%' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=29 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T16:58:38+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/listProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: search_typestr C:\www\MyJDShop\Application\Admin\Controller\ProductController.class.php 第 56 行.
+NOTIC: [8] Undefined index: search_brandid C:\www\MyJDShop\Application\Admin\Controller\ProductController.class.php 第 57 行.
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Controller\ProductController.class.php 第 58 行.
+SQL: SELECT p.*,b.brandname FROM product p INNER JOIN brand as b on b.brandid=p.brandid  WHERE ( p.typestr like '%%' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=29 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:59:31+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=29 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 62 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 62 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 93 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 93 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 97 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 97 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 101 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 101 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 109 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 109 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 117 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 118 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 123 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T16:59:35+08:00 ] ::1 /MyJDShop/index.php/Admin/Brand/addBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Model\GoodsTypesModel.class.php 第 32 行.
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\e41d760ac9abb9ff4d34c787c568def1.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-23T17:01:10+08:00 ] ::1 /MyJDShop/index.php/Admin/Brand/addBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\MyJDShop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: validate C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `brand` WHERE `brandname` = '夏普' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `brand` (`brandname`,`typeid`,`imagename`) VALUES ('夏普','1','594cd8d60ee48.png') [ RunTime:0.1530s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T17:01:11+08:00 ] ::1 /MyJDShop/index.php/Admin/Brand/addBrand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Model\GoodsTypesModel.class.php 第 32 行.
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\e41d760ac9abb9ff4d34c787c568def1.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T17:01:17+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=29 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 62 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 62 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 93 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 93 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 97 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 97 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 101 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 101 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 105 行.
+NOTIC: [8] Undefined variable: post C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 109 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 109 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 117 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 118 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 123 行.
+NOTIC: [8] Undefined variable: info C:\www\MyJDShop\Application\Runtime\Cache\Admin\91c9a7d4c9408596e252c629f6ecf905.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T17:01:34+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/ajax?typeid=%3E1%3E2%3E29%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `brand` WHERE ( typeid=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T17:03:20+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/addProduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\MyJDShop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `product` (`productname`,`typestr`,`brandid`,`state`,`price`,`vipprice`,`yhprice`,`yhnum`,`libnum`,`content`,`style`) VALUES ('SHARPLCD-40SF466A-BK','&gt;1&gt;2&gt;29&gt;','36','1','2099.00','2099.00','2099.00','0','124','&lt;ul class=&quot;parameter2 p-parameter-list&quot; style=&quot;color:#666666;font-family:tahoma, arial, &amp;quot;background-color:#FFFFFF;&quot;&gt;
+	&lt;li&gt;
+		商品名称：SHARPLCD-40SF466A-BK
+	&lt;/li&gt;
+	&lt;li&gt;
+		商品编号：4742428
+	&lt;/li&gt;
+	&lt;li&gt;
+		商品毛重：11.9kg
+	&lt;/li&gt;
+	&lt;li&gt;
+		商品产地：中国大陆
+	&lt;/li&gt;
+	&lt;li&gt;
+		观看距离：2.5-3米
+	&lt;/li&gt;
+	&lt;li&gt;
+		分辨率：全高清
+	&lt;/li&gt;
+	&lt;li&gt;
+		电视类型：智能电视
+	&lt;/li&gt;
+	&lt;li&gt;
+		能效等级：二级能效
+	&lt;/li&gt;
+	&lt;li&gt;
+		屏幕尺寸：39-40英寸
+	&lt;/li&gt;
+	&lt;li&gt;
+		选购指数：7.9-7.0
+	&lt;/li&gt;
+&lt;/ul&gt;','产品品牌SHARP产品颜色黑色最佳观看距离(米)2.5m-3m能效等级二级能效') [ RunTime:0.1510s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\MyJDShop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\MyJDShop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `productimage` (`productid`,`imagename`) VALUES ('6','594cd958a3d18.jpg') [ RunTime:0.1500s ]
+SQL: INSERT INTO `productimage` (`productid`,`imagename`) VALUES ('6','594cd958a5488.jpg') [ RunTime:0.1080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-23T17:03:22+08:00 ] ::1 /MyJDShop/index.php/Admin/Product/listProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: search_typestr C:\www\MyJDShop\Application\Admin\Controller\ProductController.class.php 第 56 行.
+NOTIC: [8] Undefined index: search_brandid C:\www\MyJDShop\Application\Admin\Controller\ProductController.class.php 第 57 行.
+NOTIC: [8] Undefined index: search_name C:\www\MyJDShop\Application\Admin\Controller\ProductController.class.php 第 58 行.
+SQL: SELECT p.*,b.brandname FROM product p INNER JOIN brand as b on b.brandid=p.brandid  WHERE ( p.typestr like '%%' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=29 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=8 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=13 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=14 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isdel - assumed 'isdel' C:\www\MyJDShop\Application\Runtime\Cache\Admin\93e0f7523886d2a47fa20aa756c0852d.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

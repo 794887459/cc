@@ -1,0 +1,40 @@
+<div class="list_left fl mt10">
+	<!-- 分类列表 start -->
+	{$catList}
+	<!-- 分类列表 end -->
+		
+	<div style="clear:both;"></div>	
+
+	<!-- 新品推荐 start -->
+	<div class="newgoods leftbar mt10">
+		<h2><strong>新品推荐</strong></h2>
+		<div class="leftbar_wrap">
+			<ul>
+				<li>
+				<foreach name="newProduct" item="v">
+					<dl>
+						<dt><a href=""><img src="__PUBLIC__/Upload/Product/{$v.imagename}" alt="" /></a></dt>
+						<dd><a href="">{$v.productname}</a></dd>
+						<dd><strong>￥{$v.vipprice}</strong></dd>
+					</dl>
+				</foreach>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 新品推荐 end -->
+
+	<!-- 最近浏览 start -->
+	<div class="viewd leftbar mt10">
+		<h2><a href="__APP__/User/History/deleteHistory/clear/0">清空</a><strong>最近浏览过的商品</strong></h2>
+		<div class="leftbar_wrap">
+		<foreach name="clickArr" item="v">
+			<dl>
+				<dt><a href=""><img src="__PUBLIC__/Upload/Product/{$v.imagename}" alt="" /></a></dt>
+				<dd><a href="">{$v.productname}</a></dd>
+			</dl>
+		</foreach>	
+		</div>
+	</div>
+	<!-- 最近浏览 end -->
+</div>

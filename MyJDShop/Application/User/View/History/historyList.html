@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>我的足迹-京东网上商城</title>
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/base.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/global.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/header.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/home.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/user.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/bottomnav.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/footer.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/userinfo.css" type="text/css">
+	
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/header.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/home.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/history.css" type="text/css">
+</head>
+<body>
+	<!-- 顶部导航 start -->
+	<include file="Public/header"/>
+	<!-- 头部 end-->
+<div class="w">
+	<div class="breadcrumb">
+        <a href=""><strong>我的足迹</strong></a>&nbsp;>&nbsp;
+    </div>
+</div><!--breadcrumb-->
+<div class="w" id="content-history">
+    <div class="goods">
+        <div class="m">
+            <div class="nav-history">
+                <div class="nh-left " ><a href="__URL__/historyList">全部分类</a></div>
+                <div class="nh-center" clstag = "personal|keycount|myhistory|2014class">
+                    <ul>
+	                    <foreach name="headerFatherTypeArr" item="v">	                    
+	                    <li <if condition="$_GET['typeid'] eq $v['typeid']">class="nh-cur"</if>><a href="__URL__/historyList/typeid/{$v.typeid}">{$v.typename}</a></li>
+	                    </foreach>
+                   </ul>
+                </div>
+        	</div>
+        </div>
+        <!-- 分类end -->
+             
+        <!-- 历史商品start -->
+        <!-- <div class='goods-content'>
+            <div class='mt'>
+            	<strong>2017-7-11</strong>                    
+            	<span class='del-all'>删除</span> 
+            </div>
+           	<div id='p-list'>
+           	
+           		<div class='img_p'>
+           			<img src='__PUBLIC__/Upload/Product/594bb60dae8f8.jpg' width='220px'/>
+           			<div class='p-price'><i class="J-p-1057210">￥849.00</i><span class="p-del"><a href="" title="删除">×</a></span></div>
+           		</div>  
+           		  
+           	</div>
+        </div> -->
+        {$historyStr}
+        <!-- 历史商品end -->
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

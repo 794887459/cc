@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>用户中心</title>
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/base.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/global.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/header.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/home.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/user.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/bottomnav.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/footer.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/style/userinfo.css" type="text/css">
+	
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/header.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/home.js"></script>
+</head>
+<body>
+	<!-- 顶部导航 start -->
+	<include file="Public/header"/>
+	<!-- 头部 end-->
+	
+	<div style="clear:both;"></div>
+
+	<!-- 页面主体 start -->
+	<div class="main w1210 bc mt10">
+		<div class="crumb w1210">
+			<h2><strong>我的XX </strong><span>> 账户信息</span></h2>
+		</div>
+		
+		<!-- 左侧导航菜单 start -->
+		<include file="Public/orderMenu"/>
+		<!-- 左侧导航菜单 end -->
+<style>
+
+
+</style>
+		<!-- 右侧内容区域 start -->
+		<div class="content fl ml10">
+			<div class="user_bd mt10">
+			
+				<div class="info-lcol">
+					<div class="u-pic" clstag="homepage|keycount|home2013|Hometxlogo">
+						<img alt="用户头像" src="//i.jd.com/commons/img/no-img_mid_.jpg">
+				        <a id="accountImg" href="//i.jd.com/user/userinfo/showImg.html"><div class="mask"></div></a>
+					</div>
+					<div class="info-m">
+						<div class="u-name" clstag="homepage|keycount|home2013|Homeinname">
+							<a href="//me.jd.com" target="_blank">{$userArr.username}</a>
+						</div>
+						
+						<div class="u-level" id="home-u-level">
+							<span class="rank r2" > 
+								<span style="color:#005ea7">&nbsp;昵称:</span>
+								<strong id="rank-text" class="rank-text ftx-05">{$userArr.nickname}</strong>
+							</span>
+						</div>
+						<div class="u-level" id="home-u-level">
+							<span class="rank r2" > 
+								<span style="color:#005ea7">&nbsp;状态:</span>
+								<strong id="rank-text" class="rank-text ftx-05">{$userArr.state}</strong>
+							</span>
+						</div>
+						<div class="u-level" id="home-u-level" data-id-u-level="56" data-id-u-levelname="铜牌会员">
+							<span class="rank r2" clstag="homepage|keycount|home2013|Homeindj"> <a href="//vip.jd.com/" target="_blank" clstag="homepage|keycount|home2013|Homevip"><s title="铜牌会员"></s></a>
+							<a href="//vip.jd.com/" target="_blank">用户等级:</a>&nbsp; </a>
+							<strong id="rank-text" class="rank-text ftx-05">0</strong></span>
+						</div>
+						<div class="u-safe" clstag="homepage|keycount|home2013|Homeinsafe">
+								<a id="accountSafe" href="//safe.jd.com/user/paymentpassword/safetyCenter.action"><span>&nbsp;账户安全:</span></a>
+								<i id="cla" class="safe-rank05"></i>
+								<strong id="rank-text" class="rank-text ftx-05">较高</strong>
+								<a id="up" href="//safe.jd.com/user/paymentpassword/safetyCenter.action" style="display: none;">提升</a>
+							</div>
+							<div class="clr mb10"></div>
+				        	<div class="u-medal" clstag="homepage|keycount|home2013|Homexunzhang">
+								<a href="//vip.jd.com/medal/index.html" target="_blank">&nbsp;我的勋章:</a>
+								<strong id="rank-text" class="rank-text ftx-05">无</strong>
+							</div>
+							<div class="clr mb10"></div>
+							<div class="u-level" id="home-u-level">
+							<span class="rank r2" > 
+								<span style="color:#005ea7">&nbsp;注册时间:</span>
+								<strong id="rank-text" class="rank-text ftx-05">{$userArr.addtime}</strong>
+							</span>
+							</div>
+							<div class="info-line">
+								<span class="top-icon"></span>
+								<span class="bottom-icon"></span>
+								<span class="left-icon"></span>
+							</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!-- 右侧内容区域 end -->
+	</div>
+	<!-- 页面主体 end-->
+
+	<div style="clear:both;"></div>
+
+	<!-- 底部导航 start -->
+	<include file="Public/bottomnav"/>
+	<!-- 底部导航 end -->
+
+	<div style="clear:both;"></div>
+	<!-- 底部版权 start -->
+	<include file="Public/userfooter"/>
+	<!-- 底部版权 end -->
+</body>
+</html>

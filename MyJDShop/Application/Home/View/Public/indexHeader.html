@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>京东商城</title>
+<link rel="stylesheet" href="__PUBLIC__/Home/style/base.css" type="text/css">
+<link rel="stylesheet" href="__PUBLIC__/Home/style/global.css" type="text/css">
+<link rel="stylesheet" href="__PUBLIC__/Home/style/header.css" type="text/css">
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/header.js"></script>
+</head>
+<body>
+	<!-- 顶部导航 start -->
+	<div class="topnav">
+		<div class="topnav_bd w1210 bc">
+			<div class="topnav_left">
+				
+			</div>
+			<div class="topnav_right fr">
+				<ul>
+					<if condition="!isset($_COOKIE['userid'])">
+						<li>您好，欢迎来到京东！[<a href="__APP__/Home/User/login">登录</a>] [<a href="__APP__/Home/User/regist">免费注册</a>] </li>
+						<else/><li>您好，欢迎来到京东！  <a href="__APP__/User/User/userinfo">{$_COOKIE['nickname']}</a></li>
+						<li class="line">|</li>
+						<li><a onclick="if (confirm('确定要退出吗？')) return true; else return false;" href="__APP__/Home/User/logout">退出</a></li>
+						<li class="line">|</li>
+						<li><a href="__APP__/User/Order/index">我的订单</a></li>
+						<li class="line">|</li>
+						<li>客户服务</li>
+					</if>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部导航 end -->
+	
+	<div style="clear:both;"></div>
+
+	<!-- 头部 start -->
+	<div class="header w1210 bc mt15">
+		<!-- 头部上半部分 start 包括 logo、搜索、用户中心和购物车结算 -->
+		<div class="logo w1210">
+			<h1 class="fl"><a href="__APP__/Home/Index/index"><img src="__PUBLIC__/Home/images/logo.png" alt="京西商城"></a></h1>
+			<!-- 头部搜索 start -->
+			<div class="search fl">
+				<div class="search_form">
+					<div class="form_left fl"></div>
+					<form action="__APP__/Home/Product/productSearch" name="search" method="get" class="fl">
+						<input type="text" class="txt" placeholder="请输入商品关键字" name="search"/>
+						<input type="submit" class="btn" value="搜索" />
+					</form>
+					<div class="form_right fl"></div>
+				</div>
+				
+				<div style="clear:both;"></div>
+
+				<div class="hot_search">
+					<strong>热门搜索:</strong>   <!-- 怎么记录热门搜索  根据这个商品的点击数抽取四个商品名称 -->
+					<foreach name="clickTop" item='v'>
+					<a href="__APP__/Home/Product/productDetail/productid/{$v.productid}">{$v.productname}</a>&nbsp;&nbsp;
+					</foreach>
+				</div>
+			</div>
+			<!-- 头部搜索 end -->
+
+			<!-- 用户中心 start-->
+			<div class="user fl">
+				<dl>
+					<dt>
+						<em></em>
+						<a href="__APP__/User/User/index">用户中心</a>
+						<b></b>
+					</dt>
+					<dd>
+					<if condition="!isset($_COOKIE['userid'])">
+						<div class="prompt">
+							您好，请<a href="__APP__/Home/User/login">登录</a>
+						</div>
+					</if>
+						<div class="uclist mt10">
+							<ul class="list1 fl">
+								<li><a href="__APP__/User/User/userinfo">用户信息></a></li>
+								<li><a href="">我的订单></a></li>
+								<li><a href="">收货地址></a></li>
+								<li><a href="">我的收藏></a></li>
+							</ul>
+
+							<ul class="fl">
+								<li><a href="">我的留言></a></li>
+								<li><a href="">我的红包></a></li>
+								<li><a href="">我的评论></a></li>
+								<li><a href="">资金管理></a></li>
+							</ul>
+
+						</div>
+						<div style="clear:both;"></div>
+						<div class="viewlist mt10">
+							<h3>最近浏览的商品：</h3>		<!-- 根据用户的点击时间抽取三张图片 -->
+							<ul>
+								<foreach name="clickArr" item="v">
+									<li><a href="__APP__/Home/Product/productDetail/productid/{$v.productid}"><img src="__PUBLIC__/Upload/Product/{$v.imagename}" alt="{$v.procutname}" /></a></li>
+								</foreach>
+							</ul>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<!-- 用户中心 end-->
+
+			<!-- 购物车 start -->
+			<div class="cart fl">
+				<dl>
+					<dt>
+						<a href="__APP__/Home/CartCookie/index">去购物车结算</a>
+						<b></b>
+					</dt>
+					<dd>
+						<div class="prompt">
+							<if condition="$cartNum">您购物车中共有{$cartNum}件商品<else/>
+							购物车中还没有商品，赶紧选购吧！</if>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<!-- 购物车 end -->
+		</div>
+		<!-- 头部上半部分 end -->
+		
+		<div style="clear:both;"></div>
+
+		<!-- 导航条部分 start -->
+		<div class="nav w1210 bc mt10">
+			<!--  商品分类部分 start-->
+				<div class="category fl">  
+				<div class="cat_hd">  <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，鼠标滑过时展开菜单则将off类换成on类 -->
+				
+					<h2>全部商品分类</h2>
+					<em></em>
+				</div>
+					 
+				<div class="cat_bd">
+					<!-- 分类开始 -->
+					{$allTypeStr}
+					<!-- 分类结束 -->
+					
+				</div>
+			</div>
+			<!--  商品分类部分 end--> 
+
+			<div class="navitems fl">
+				<ul class="fl">
+					<if condition="$headerControllerName eq 'Index'">
+						<li class="current"><a href="__APP__/Home/Index/index">首页</a></li>
+						<else/><li><a href="__APP__/Home/Index/index">首页</a></li>
+					</if>
+					<foreach name="headerFatherTypeArr" item="v">
+					<if condition="$headerTypeId eq $v['typeid']">
+						<li class="current"><a  href="__APP__/Home/Product/productList/typeid/{$v.typeid}">{$v.typename}</a></li>
+						<else/><li><a  href="__APP__/Home/Product/productList/typeid/{$v.typeid}">{$v.typename}</a></li>
+					</if>
+					</foreach>
+				</ul>
+				<div class="right_corner fl"></div>
+			</div>
+		</div>
+		<!-- 导航条部分 end -->
+	</div>
+	<!-- 头部 end-->
+	
+	<div style="clear:both;"></div>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="__PUBLIC__/Home/style/base.css" type="text/css">
+<link rel="stylesheet" href="__PUBLIC__/Home/style/global.css" type="text/css">
+<link rel="stylesheet" href="__PUBLIC__/Home/style/header.css" type="text/css">
+<link rel="stylesheet" href="__PUBLIC__/Home/style/list.css" type="text/css">
+<link rel="stylesheet" href="__PUBLIC__/Home/style/common.css" type="text/css">
+<link rel="stylesheet" href="__PUBLIC__/Home/style/bottomnav.css" type="text/css">
+<link rel="stylesheet" href="__PUBLIC__/Home/style/footer.css" type="text/css">
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/header.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/list.js"></script>
+
+</head>
+<body>
+	<!-- 顶部导航 start -->
+	<include file="Public/header"/>
+	<!-- 头部 end-->
+
+	<div style="clear:both;"></div>
+
+	<!-- 列表主体 start -->
+	<div class="list w1210 bc mt10">
+		<!-- 面包屑导航 start -->
+		<div class="breadcrumb">
+			<h2>当前位置：<a href="__MODULE__/Index/index">首页</a> {$nameStr}</h2>
+		</div>
+		<!-- 面包屑导航 end -->
+
+		<!-- 左侧内容 start -->
+		<include file="Public/leftContent"/>
+		<!-- 左侧内容 end -->
+	
+		<!-- 列表内容 start -->
+		<div class="list_bd fl ml10 mt10">
+			<!-- 热卖、促销 start -->
+			<div class="list_top">
+				<!-- 热卖推荐 start -->
+				<div class="hotsale fl">
+					<h2><strong><span class="none">热卖推荐</span></strong></h2>
+					<ul>
+					<foreach name="hotProduct" item="v">
+						<li>
+							<dl>
+								<dt><a href="__URL__/productDetail/productid/{$v.productid}"><img src="__PUBLIC__/Upload/Product/{$v.imagename}" alt="{$v.productname}" /></a></dt>
+								<dd class="name"><a href="__URL__/productDetail/productid/{$v.productid}">{$v.productname}</a></dd>
+								<dd class="price">特价：<strong>{$v.yhprice}</strong></dd>
+								<dd class="buy"><a href="__URL__/productDetail/productid/{$v.productid}"><span>立即抢购</span></a></dd>
+							</dl>
+						</li>
+					</foreach>
+					</ul>
+				</div>
+				<!-- 热卖推荐 end -->
+
+				<!-- 促销活动 start -->
+				<div class="promote fl">
+					<h2><strong><span class="none">促销活动</span></strong></h2>
+					<ul>
+						<li><b>.</b><a href="">DIY装机之向雷锋同志学习！</a></li>
+						<li><b>.</b><a href="">京东宏碁联合促销送好礼！</a></li>
+						<li><b>.</b><a href="">台式机笔记本三月巨惠！</a></li>
+						<li><b>.</b><a href="">富勒A53g智能人手识别鼠标</a></li>
+						<li><b>.</b><a href="">希捷硬盘白色情人节专场</a></li>
+					</ul>
+
+				</div>
+				<!-- 促销活动 end -->
+			</div>
+			<!-- 热卖、促销 end -->
+			
+			<div style="clear:both;"></div>
+			
+			<!-- 商品筛选 start -->
+			<div class="filter mt10">
+				<h2><a href="">重置筛选条件</a> <strong>商品筛选</strong></h2>
+				<div class="filter_wrap">
+					<dl>
+						<dt>品牌：</dt>						
+						<dd class="cur"><a href="__URL__/productList/typeid/{$Think.get.typeid}">不限</a></dd>
+						<foreach name="brandArr" item="v">
+							<if condition="$Think.get.brandid eq $v[brandid]">
+								<dd class="cur"><a href="__URL__/productList/typeid/{$Think.get.typeid}/brandid/{$v.brandid}">{$v.brandname}</a></dd>
+								<else/><dd><a href="__URL__/productList/typeid/{$Think.get.typeid}/brandid/{$v.brandid}">{$v.brandname}</a></dd>
+							</if>	
+						</foreach>
+					</dl>
+
+					<dl>
+						<dt>价格：</dt>
+						<dd class="cur"><a href="">不限</a></dd>
+						<dd><a href="">1000-1999</a></dd>
+						<dd><a href="">2000-2999</a></dd>
+						<dd><a href="">3000-3499</a></dd>
+						<dd><a href="">3500-3999</a></dd>
+						<dd><a href="">4000-4499</a></dd>
+						<dd><a href="">4500-4999</a></dd>
+						<dd><a href="">5000-5999</a></dd>
+						<dd><a href="">6000-6999</a></dd>
+						<dd><a href="">7000-7999</a></dd>
+					</dl>
+
+					<dl>
+						<dt>尺寸：</dt>
+						<dd class="cur"><a href="">不限</a></dd>
+						<dd><a href="">10.1英寸及以下</a></dd>
+						<dd><a href="">11英寸</a></dd>
+						<dd><a href="">12英寸</a></dd>
+						<dd><a href="">13英寸</a></dd>
+						<dd><a href="">14英寸</a></dd>
+						<dd><a href="">15英寸</a></dd>
+					</dl>
+
+					<dl class="last">
+						<dt>处理器：</dt>
+						<dd class="cur"><a href="">不限</a></dd>
+						<dd><a href="">intel i3</a></dd>
+						<dd><a href="">intel i5</a></dd>
+						<dd><a href="">intel i7</a></dd>
+						<dd><a href="">AMD A6</a></dd>
+						<dd><a href="">AMD A8</a></dd>
+						<dd><a href="">AMD A10</a></dd>
+						<dd><a href="">其它intel平台</a></dd>
+					</dl>
+				</div>
+			</div>
+			<!-- 商品筛选 end -->
+			
+			<div style="clear:both;"></div>
+
+			<!-- 排序 start -->
+			<div class="sort mt10">
+				<dl>
+					<dt>排序：</dt>
+					<!-- 根据销量排序 -->
+					<if condition="$Think.get.order eq asc">	<!-- 如果get下的是asc那么点击后变desc -->
+						<dd <if condition="$Think.get.field eq salesnum">class="cur"</if>><a href="__URL__/productList/typeid/{$Think.get.typeid}/field/salesnum/order/desc">销量</a></dd>	<!-- 传typeid 销量字段 -->
+						<else/><dd <if condition="$Think.get.field eq salesnum">class="cur"</if>><a href="__URL__/productList/typeid/{$Think.get.typeid}/field/salesnum/order/asc">销量</a></dd>
+					</if>
+					<!-- 根据价格排序 -->
+					<if condition="$Think.get.order eq asc">
+						<dd <if condition="$Think.get.field eq price">class="cur"</if>><a href="__URL__/productList/typeid/{$Think.get.typeid}/field/price/order/desc">价格</a></dd> <!-- 传typeid 价格字段 -->
+						<else/><dd <if condition="$Think.get.field eq price">class="cur"</if>><a href="__URL__/productList/typeid/{$Think.get.typeid}/field/price/order/asc">价格</a></dd>
+					</if>
+					<!-- 根据评论数排序 -->
+					<if condition="$Think.get.order eq asc">
+						<dd <if condition="$Think.get.field eq reviewnum">class="cur"</if>><a href="__URL__/productList/typeid/{$Think.get.typeid}/field/reviewnum/order/desc">评论数</a></dd>
+						<else/><dd <if condition="$Think.get.field eq reviewnum">class="cur"</if>><a href="__URL__/productList/typeid/{$Think.get.typeid}/field/reviewnum/order/asc">评论数</a></dd>
+					</if>
+					<!-- 根据上架时间排序 -->
+					<if condition="$Think.get.order eq asc">
+						<dd <if condition="$Think.get.field eq productid">class="cur"</if>><a href="__URL__/productList/typeid/{$Think.get.typeid}/field/productid/order/desc">上架时间</a></dd>
+						<else/><dd <if condition="$Think.get.field eq productid">class="cur"</if>><a href="__URL__/productList/typeid/{$Think.get.typeid}/field/productid/order/asc">上架时间</a></dd>
+					</if>
+				</dl>
+			</div>
+			
+			<!-- 排序 end -->
+			
+			<div style="clear:both;"></div>
+
+			<!-- 商品列表 start-->
+			<div class="goodslist mt10">
+				<ul>
+				<foreach name="productArr" item="v">
+					<li>
+						<dl>
+							<dt><a href="__URL__/productDetail/productid/{$v.productid}"><img src="__PUBLIC__/Upload/Product/{$v.imagename}" alt="{$v.productname}" /></a></dt>
+							<dd><a href="__URL__/productDetail/productid/{$v.productid}">{$v.productname}</a></dt>
+							<dd><strong>￥{$v.price}</strong></dt>
+							<dd><a href="__URL__/productDetail/productid/{$v.productid}"><em>已有{$v.reviewnum}条评价&nbsp;销量{$v.salesnum}</em></a></dt>
+						</dl>
+					</li>
+				</foreach>	
+				</ul>
+			</div>
+			<!-- 商品列表 end-->
+
+			<!-- 分页信息 start -->
+			<div class="page mt20">
+				{$pagestr}&nbsp;&nbsp;	
+				<span>
+					<em>共{$countpage}页&nbsp;&nbsp;到第 <input type="text" class="page_num" value="1"/> 页</em>
+					<a href="" class="skipsearch" href="javascript:;">确定</a>
+				</span>			
+			</div>
+			<!-- 分页信息 end -->
+
+		</div>
+		<!-- 列表内容 end -->
+	</div>
+	<!-- 列表主体 end-->
+
+	<div style="clear:both;"></div>
+	<!-- 底部导航 start -->
+	<include file="Public/bottomnav"/>
+	<!-- 底部导航 end -->
+
+	<div style="clear:both;"></div>
+	<!-- 底部版权 start -->
+	<include file="Public/userFooter"/>
+	<!-- 底部版权 end -->
+
+
+</body>
+</html>

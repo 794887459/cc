@@ -1,0 +1,993 @@
+[ 2017-07-12T10:06:48+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/Product/productList/typeid/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0065s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE ( typestr like '&gt;10&gt;%' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Home\Controller\ProductController.class.php 第 25 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Home\Controller\ProductController.class.php 第 26 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Home\Controller\ProductController.class.php 第 30 行.
+SQL: SELECT * FROM `product` WHERE (  typestr like '&gt;10&gt;%' ) ORDER BY salesnum desc LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product` WHERE ( state=1 and isdel=1 ) LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=6 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `brand` WHERE ( typeid=10 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( typeid=10 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: search E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 56 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 400 行.
+NOTIC: [8] Use of undefined constant asc - assumed 'asc' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 400 行.
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 402 行.
+NOTIC: [8] Use of undefined constant salesnum - assumed 'salesnum' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 402 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 404 行.
+NOTIC: [8] Use of undefined constant asc - assumed 'asc' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 404 行.
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 405 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 405 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 407 行.
+NOTIC: [8] Use of undefined constant asc - assumed 'asc' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 407 行.
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 408 行.
+NOTIC: [8] Use of undefined constant reviewnum - assumed 'reviewnum' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 408 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 410 行.
+NOTIC: [8] Use of undefined constant asc - assumed 'asc' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 410 行.
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 411 行.
+NOTIC: [8] Use of undefined constant productid - assumed 'productid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 411 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2017-07-12T10:06:50+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/Product/productList/typeid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0062s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE ( typestr like '&gt;1&gt;%' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Home\Controller\ProductController.class.php 第 25 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Home\Controller\ProductController.class.php 第 26 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Home\Controller\ProductController.class.php 第 30 行.
+SQL: SELECT * FROM `product` WHERE (  typestr like '&gt;1&gt;%' ) ORDER BY salesnum desc LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product` WHERE ( state=1 and isdel=1 ) LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=6 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `brand` WHERE ( typeid=1 and isdel=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( typeid=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: search E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 56 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 400 行.
+NOTIC: [8] Use of undefined constant asc - assumed 'asc' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 400 行.
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 402 行.
+NOTIC: [8] Use of undefined constant salesnum - assumed 'salesnum' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 402 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 404 行.
+NOTIC: [8] Use of undefined constant asc - assumed 'asc' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 404 行.
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 405 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 405 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 407 行.
+NOTIC: [8] Use of undefined constant asc - assumed 'asc' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 407 行.
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 408 行.
+NOTIC: [8] Use of undefined constant reviewnum - assumed 'reviewnum' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 408 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 410 行.
+NOTIC: [8] Use of undefined constant asc - assumed 'asc' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 410 行.
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 411 行.
+NOTIC: [8] Use of undefined constant productid - assumed 'productid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 411 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2017-07-12T10:06:52+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/Product/productList/typeid/1/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0063s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE ( typestr like '&gt;1&gt;%' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Home\Controller\ProductController.class.php 第 25 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Home\Controller\ProductController.class.php 第 26 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Home\Controller\ProductController.class.php 第 30 行.
+SQL: SELECT * FROM `product` WHERE (  typestr like '&gt;1&gt;%' ) ORDER BY salesnum desc LIMIT 4,4   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=6 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `product` WHERE ( state=1 and isdel=1 ) LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=4 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=6 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `brand` WHERE ( typeid=1 and isdel=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( typeid=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: search E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 56 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: brandid E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Use of undefined constant brandid - assumed 'brandid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 349 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 400 行.
+NOTIC: [8] Use of undefined constant asc - assumed 'asc' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 400 行.
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 402 行.
+NOTIC: [8] Use of undefined constant salesnum - assumed 'salesnum' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 402 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 404 行.
+NOTIC: [8] Use of undefined constant asc - assumed 'asc' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 404 行.
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 405 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 405 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 407 行.
+NOTIC: [8] Use of undefined constant asc - assumed 'asc' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 407 行.
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 408 行.
+NOTIC: [8] Use of undefined constant reviewnum - assumed 'reviewnum' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 408 行.
+NOTIC: [8] Undefined index: order E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 410 行.
+NOTIC: [8] Use of undefined constant asc - assumed 'asc' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 410 行.
+NOTIC: [8] Undefined index: field E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 411 行.
+NOTIC: [8] Use of undefined constant productid - assumed 'productid' E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\2fbf49565d73bdef7f91c573a16486f3.php 第 411 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2017-07-12T10:06:54+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/Product/productDetail/productid/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0062s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0064s ]
+SQL: update product set clicknum=clicknum+1 where productid=6 [ RunTime:0.0023s ]
+SQL: SELECT * FROM `product` WHERE ( productid=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=6 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: url E:\PHP\www\MyJDShop\Application\Home\Common\function.php 第 40 行.
+SQL: SELECT * FROM `goodstypes` WHERE ( typeid=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( typeid=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( typeid=29 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: search E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\86bdfdc431741999229ae11d21a8570f.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2017-07-12T10:06:55+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/Cart_cookie/addCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0066s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `cart` WHERE ( productid=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `cart` (`style`,`num`,`productid`,`userid`,`xiaoji`) VALUES ('黑色','1','6','1','2099') [ RunTime:0.0022s ]
+
+[ 2017-07-12T10:06:55+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/CartCookie/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0066s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT c.*,p.productid,p.productname,p.vipprice FROM cart c INNER JOIN product as p on p.productid=c.productid  WHERE ( userid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `productimage` WHERE ( Productid=6 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: sum E:\PHP\www\MyJDShop\Application\Home\Controller\CartCookieController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2017-07-12T10:06:56+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/CartCookie/checkoutCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0063s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0063s ]
+SQL: UPDATE `cart` SET `sum`='2099' WHERE ( userid=1 ) [ RunTime:0.0023s ]
+SQL: SELECT c.*,p.vipprice,p.productname FROM cart c INNER JOIN product as p on p.productid=c.productid   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `productimage` WHERE ( productid=6 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `userinfo` WHERE ( userid=1 and state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `userinfo` WHERE ( userid=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `city` WHERE ( fid=0 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2017-07-12T15:53:09+08:00 ] 127.0.0.1 /MyJDShop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0061s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-07-12T15:53:15+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/CartCookie/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0064s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0059s ]
+SQL: SELECT `productid`,`productname`,`vipprice` FROM `product` WHERE ( productid=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `productid`,`productname`,`vipprice` FROM `product` WHERE ( productid=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `productimage` WHERE ( Productid=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: sum E:\PHP\www\MyJDShop\Application\Home\Controller\CartCookieController.class.php 第 35 行.
+SQL: SELECT * FROM `productimage` WHERE ( Productid=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2017-07-12T15:53:20+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/CartCookie/checkoutCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0062s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+
+[ 2017-07-12T15:53:20+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/User/login/s/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0064s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: post E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Undefined variable: info E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2017-07-12T15:53:20+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/User/showCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0073s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2017-07-12T15:53:26+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/CartCookie/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0063s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0062s ]
+SQL: SELECT `productid`,`productname`,`vipprice` FROM `product` WHERE ( productid=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `productid`,`productname`,`vipprice` FROM `product` WHERE ( productid=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `productimage` WHERE ( Productid=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: sum E:\PHP\www\MyJDShop\Application\Home\Controller\CartCookieController.class.php 第 35 行.
+SQL: SELECT * FROM `productimage` WHERE ( Productid=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2017-07-12T22:06:00+08:00 ] 127.0.0.1 /MyJDShop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0071s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2017-07-12T22:06:08+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0065s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: post E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 65 行.
+NOTIC: [8] Undefined variable: info E:\PHP\www\MyJDShop\Application\Runtime\Cache\Home\5c9ee6d19cd41add49f97afe3aef0b25.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2017-07-12T22:06:08+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/User/showCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0075s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2017-07-12T22:06:28+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/User/showCode/id/0.2697184297319821
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0062s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-07-12T22:06:29+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/User/showCode/id/0.18627690714488754
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0068s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2017-07-12T22:06:29+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/User/showCode/id/0.7684012369602728
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0066s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-07-12T22:06:36+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0087s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `users` WHERE ( username='北方的狼' and password='5f8591a3d4fe06393cad53edff27ba05' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-07-12T22:06:37+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0062s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2017-07-12T22:06:56+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/CartCookie/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0067s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `productimage` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0060s ]
+SQL: SELECT c.*,p.productid,p.productname,p.vipprice FROM cart c INNER JOIN product as p on p.productid=c.productid  WHERE ( userid=1 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: sum E:\PHP\www\MyJDShop\Application\Home\Controller\CartCookieController.class.php 第 44 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2017-07-12T22:07:01+08:00 ] 127.0.0.1 /MyJDShop/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0065s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2017-07-12T22:07:23+08:00 ] 127.0.0.1 /MyJDShop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 and isdel=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goodstypes` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=2 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=33 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=4 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=5 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=10 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=11 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `goodstypes` WHERE ( fid=12 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 16 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined index: typeid E:\PHP\www\MyJDShop\Application\Home\Controller\HomeController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0066s ]
+SQL: SELECT `productid`,`productname` FROM `product` ORDER BY clicknum desc LIMIT 0,3   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
