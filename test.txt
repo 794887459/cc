@@ -8,3 +8,4 @@
 creating a new branch is quick AND simple
 快速和简单的创建一个新的分支
 add contetn
+我在学习用--no-ff方式git mergin合并
