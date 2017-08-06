@@ -1,6 +1,6 @@
-﻿test Git
-I change the content
-I change the content too 
+﻿1test Git
+2I change the content
+3I change the content too 
 这是第三次修改了
 我进行了第四次修改
 五次修改
