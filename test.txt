@@ -5,3 +5,5 @@ I change the content too
 我进行了第四次修改
 五次修改
 我学到分支了 都学了git checkout 分支名 git branch
+creating a new branch is quick AND simple
+快速和简单的创建一个新的分支
